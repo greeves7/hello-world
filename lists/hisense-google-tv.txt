@@ -12,8 +12,8 @@
 ## Batch 2 - Hisense telemetry / ads: fill in from lists/review.txt (TELEMETRY and CONTENT sections)
 #
 ## Ask first (your choice): only disable what you don't use
-#com.google.android.katniss                       # Google Assistant / voice search on the remote mic
-#com.google.android.apps.mediashell               # Chromecast built-in (casting from phones)
+# KEEP com.google.android.katniss                 # Google Assistant: in use on this TV, leave enabled
+#com.google.android.apps.mediashell              # Chromecast built-in (casting from phones)
 #com.google.android.apps.tv.dreamx                # Google TV ambient mode / screensaver with suggestions
 #
 ## Streaming apps you don't use (they reinstall from Play if you change your mind)

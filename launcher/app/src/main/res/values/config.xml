@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Everything you are likely to change lives here. After editing, run
+    tools/install-launcher.sh again to rebuild and reinstall.
+-->
+<resources>
+    <!-- Tiles per row, for the dock and the grid alike: 4, 5, 6 or 7. -->
+    <integer name="columns">4</integer>
+
+    <!-- Dock apps, left to right, by package name. Apps that aren't installed are skipped.
+         At most `columns` are used. List installed packages with: tools/tv.sh pm list packages -->
+    <string-array name="dock_apps">
+        <item>com.google.android.youtube.tv</item>
+        <item>com.netflix.ninja</item>
+        <item>com.amazon.amazonvideo.livingroom</item>
+        <item>com.plexapp.android</item>
+    </string-array>
+
+    <!-- Apps never shown on Home (they still work and stay installed). -->
+    <string-array name="hidden_apps">
+    </string-array>
+
+    <!-- Also show phone-style apps that have no TV (Leanback) entry. -->
+    <bool name="include_phone_apps">false</bool>
+
+    <!-- Greeting above the clock. -->
+    <bool name="show_greeting">true</bool>
+
+    <!-- Wallpaper: drop a file named wallpaper.jpg (or .png) into res/drawable-nodpi/.
+         Without one the background stays pitch black. Dim is 0-90 percent. -->
+    <integer name="wallpaper_dim_percent">45</integer>
+
+    <!-- Remote-button helper (KeyService), used only once tools/keys.sh enables it. -->
+    <!-- 178 = KEYCODE_TV_INPUT: opens the Inputs menu. -->
+    <integer-array name="input_key_keycodes">
+        <item>178</item>
+    </integer-array>
+    <!-- 176 = KEYCODE_SETTINGS: opens Settings. -->
+    <integer-array name="settings_key_keycodes">
+        <item>176</item>
+    </integer-array>
+    <!-- For a button that logs as KEY_UNKNOWN: read its scancode with `getevent -lt`. -->
+    <integer-array name="settings_key_scancodes">
+    </integer-array>
+    <!-- App buttons as "keycode=package", e.g. "1234=com.netflix.ninja". -->
+    <string-array name="app_keys">
+    </string-array>
+</resources>

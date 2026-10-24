@@ -1,0 +1,5 @@
+# Per-TV data written by tools/: keep these folders on your computer (restore.sh reads state/).
+state/
+backup/
+shots/
+lists/review.txt

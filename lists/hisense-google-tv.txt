@@ -1,0 +1,27 @@
+# Starter list for a Hisense Android TV 11 / Google TV set (build RTT2.220118.001).
+# NOT verified on your TV: Hisense package names vary by model and region. Run tools/classify.sh
+# to see what is really installed, check unknown names with tools/whatis.sh, and remove the
+# leading '#' only on lines you have checked and agree with. Then: tools/disable.sh <this file>
+#
+# Firmware re-enabling something at every boot (tools/reboot-check.sh tells you): note it here.
+#
+## Batch 1 - Google telemetry and recommendation rows (safe on Google TV)
+#com.google.android.feedback                      # "Send feedback" collector
+#com.google.android.tvrecommendations             # recommendation rows for the old Android TV home
+#
+## Batch 2 - Hisense telemetry / ads: fill in from lists/review.txt (TELEMETRY and CONTENT sections)
+#
+## Ask first (your choice): only disable what you don't use
+#com.google.android.katniss                       # Google Assistant / voice search on the remote mic
+#com.google.android.apps.mediashell               # Chromecast built-in (casting from phones)
+#com.google.android.apps.tv.dreamx                # Google TV ambient mode / screensaver with suggestions
+#
+## Streaming apps you don't use (they reinstall from Play if you change your mind)
+#com.google.android.videos                        # Google TV / Play Movies
+#com.google.android.play.games
+#com.google.android.youtube.tvmusic
+#com.google.android.youtube.tvkids
+#
+## Never here (refused by disable.sh): Play Store, Play services, TV/HDMI inputs
+## (com.mediatek.wwtv.tvcenter, com.mediatek.tvinput), keyboard, remote and Bluetooth services,
+## Settings. The stock launcher and setup wizard go through tools/stock-launcher.sh.

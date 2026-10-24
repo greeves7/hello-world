@@ -1,0 +1,35 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'io.github.greeves7.tvhome'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'io.github.greeves7.tvhome'
+        // 26 = Android 8.0. The Hisense this was written for runs Android TV 11 (SDK 30).
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        abortOnError false
+    }
+}
+
+// No dependencies: the launcher uses framework views only, which keeps the APK small
+// and the memory footprint low on a 1 GB TV.

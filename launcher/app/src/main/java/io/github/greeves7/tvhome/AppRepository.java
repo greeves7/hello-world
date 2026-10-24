@@ -46,9 +46,9 @@ final class AppRepository {
             AppEntry e = byPackage.get(pkg.trim());
             if (e != null && !dock.contains(e) && dock.size() < config.columns) dock.add(e);
         }
-        if (dock.isEmpty()) {
-            // None of the configured dock apps are installed: use the first apps instead.
-            for (int i = 0; i < all.size() && i < config.columns; i++) dock.add(all.get(i));
+        // Fill slots left empty by dock apps that aren't installed with the first other apps.
+        for (int i = 0; i < all.size() && dock.size() < config.columns; i++) {
+            if (!dock.contains(all.get(i))) dock.add(all.get(i));
         }
         List<AppEntry> grid = new ArrayList<>(all);
         grid.removeAll(dock);

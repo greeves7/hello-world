@@ -137,7 +137,7 @@ screenshots. That is the TV protecting the picture, not a fault.
 Everything is in `launcher/app/src/main/res/values/config.xml`:
 
 ```xml
-<integer name="columns">4</integer>             <!-- 4, 5, 6 or 7 tiles per row -->
+<integer name="columns">7</integer>             <!-- 4, 5, 6 or 7 tiles per row -->
 <string-array name="dock_apps">                 <!-- left to right, by package name -->
     <item>com.google.android.youtube.tv</item>
     <item>com.netflix.ninja</item>

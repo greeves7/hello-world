@@ -220,7 +220,7 @@ public class HomeActivity extends Activity {
         int cols = config.columns;
         marginX = dp(64);
         bandPad = dp(24);
-        gap = dp(28);
+        gap = cols >= 6 ? dp(20) : dp(28); // tighter gaps keep 6-7 tiles a usable size
         tileW = (screenW - 2 * marginX - 2 * bandPad - (cols - 1) * gap) / cols;
         tileH = tileW * 9 / 16;
         labelH = dp(30);

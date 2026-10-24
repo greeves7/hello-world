@@ -13,8 +13,9 @@
 #
 ## Ask first (your choice): only disable what you don't use
 # KEEP com.google.android.katniss                 # Google Assistant: in use on this TV, leave enabled
-#com.google.android.apps.mediashell              # Chromecast built-in (casting from phones)
-#com.google.android.apps.tv.dreamx                # Google TV ambient mode / screensaver with suggestions
+# KEEP com.google.android.apps.mediashell         # Chromecast built-in: in use, leave enabled
+# KEEP com.google.android.apps.tv.dreamx          # ambient mode: in use, leave enabled
+# KEEP firmware updates: leave any Hisense *update* / *ota* / *fota* package enabled
 #
 ## Streaming apps you don't use (they reinstall from Play if you change your mind)
 #com.google.android.videos                        # Google TV / Play Movies

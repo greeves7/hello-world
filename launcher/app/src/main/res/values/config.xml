@@ -5,15 +5,19 @@
 -->
 <resources>
     <!-- Tiles per row, for the dock and the grid alike: 4, 5, 6 or 7. -->
-    <integer name="columns">4</integer>
+    <integer name="columns">7</integer>
 
     <!-- Dock apps, left to right, by package name. Apps that aren't installed are skipped.
-         At most `columns` are used. List installed packages with: tools/tv.sh pm list packages -->
+         At most `columns` are used; empty slots are filled with your other apps, A to Z.
+         List installed packages with: tools/tv.sh pm list packages -->
     <string-array name="dock_apps">
         <item>com.google.android.youtube.tv</item>
         <item>com.netflix.ninja</item>
         <item>com.amazon.amazonvideo.livingroom</item>
+        <item>com.disney.disneyplus</item>
         <item>com.plexapp.android</item>
+        <item>com.spotify.tv.android</item>
+        <item>com.google.android.youtube.tvmusic</item>
     </string-array>
 
     <!-- Apps never shown on Home (they still work and stay installed). -->
